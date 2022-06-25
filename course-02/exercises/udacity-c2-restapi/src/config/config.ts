@@ -1,9 +1,9 @@
 export const config = {
   "dev": {
-    "username": "",
-    "password": "",
-    "database": "",
-    "host": "",
+    "username": "udagramkipkemoi",
+    "password": "udagramkipkemoi",
+    "database": "udagramkipkemoi",
+    "host": "udagramkipkemoi.cod9bakwg0s1.us-east-1.rds.amazonaws.com",
     "dialect": "postgres",
     "aws_region": "us-east-2",
     "aws_profile": "default",
