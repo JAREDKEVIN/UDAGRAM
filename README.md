@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Udagram REST API
 
 Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
@@ -39,6 +38,4 @@ npm run dev
 Developer mode runs off the TypeScript source. Any saves will reset the server and run the latest version of the codebase. 
 
 =======
-# UDAGRAM
-Instagram Clone.
->>>>>>> e0357f7a82bdb9deb4ec213b15d410b6d6571ee3
+
