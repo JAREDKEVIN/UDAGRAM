@@ -24,3 +24,9 @@ export const config = {
 }
 
 process.env.POSTGRES_USERNAME
+process.env.POSTGRES_PASSWORD
+process.env.POSTGRES_DATABASE
+process.env.POSTGRES_HOST
+process.env.aws_region
+process.env.aws_media_bucket
+process.env.aws_profile

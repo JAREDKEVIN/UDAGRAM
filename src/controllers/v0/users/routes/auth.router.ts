@@ -11,14 +11,19 @@ import { config } from '../../../../config/config';
 
 const router: Router = Router();
 
+//@TODO Use Bcrypt to Generated Salted Hashed Passwords
 async function generatePassword(plainTextPassword: string): Promise<string> {
-    //@TODO Use Bcrypt to Generated Salted Hashed Passwords
-    return "NotYetImplemented"
+    const rounds=10;
+    const salt= await bcrypt.genSalt(rounds);
+    const hash= await bcrypt.hash(plainTextPassword, salt);
+    
+    return hash;
 }
 
-async function comparePasswords(plainTextPassword: string, hash: string): Promise<boolean> {
-    //@TODO Use Bcrypt to Compare your password to your Salted Hashed Password
-    return true
+  //@TODO Use Bcrypt to Compare your password to your Salted Hashed Password
+async function comparePasswords(plaintextPassword: string, hash: string): Promise<boolean> {
+  
+    return await bcrypt.compare(plaintextPassword, hash);
 }
 
 function generateJWT(user: User): string {
